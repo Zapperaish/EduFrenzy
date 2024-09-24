@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login/Sign Up - EduFrenzy</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-container">
+      <div class="form-header">
+        <h2 id="form-title">Login</h2>
+      </div>
+      <div id="login-form">
+        <form>
+          <label for="username-email">Username or Email</label>
+          <input type="text" id="username-email" required>
+          
+          <label for="password">Password</label>
+          <input type="password" id="password" required>
+
+          <div class="forgot-password">
+            <a href="#">Forgot Password?</a>
+          </div>
+
+          <button type="submit">Login</button>
+          <p>New User? <a href="#" id="toggle-signup">Register</a></p>
+        </form>
+      </div>
+      
+      <div id="signup-form" class="hidden">
+        <form>
+          <label for="username">Username</label>
+          <input type="text" id="username" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" required>
+          
+          <label for="password-signup">Password</label>
+          <input type="password" id="password-signup" required>
+          
+          <label for="confirm-password">Confirm Password</label>
+          <input type="password" id="confirm-password" required>
+
+          <div class="terms">
+            <input type="checkbox" id="terms-checkbox" required>
+            <label for="terms-checkbox">I agree to the Terms and Conditions</label>
+          </div>
+
+          <button type="submit">Sign Up</button>
+          <p>Already Registered? <a href="#" id="toggle-login">Login</a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
